@@ -3,6 +3,7 @@ Freezer::Freezer() :
     GoodBasic{ 0, 1, "noname", "nodescription" } {
     _cameras = 1;
     _weight = 10;
+    _newValue = 2;
 }
 
 Freezer::Freezer(int id) :
@@ -10,6 +11,7 @@ Freezer::Freezer(int id) :
 {
     _cameras = 1;
     _weight = 10;
+    _newValue = 2;
 }
 
 Freezer::Freezer(int id, int price) :
@@ -17,6 +19,7 @@ Freezer::Freezer(int id, int price) :
 {
     _cameras = 1;
     _weight = 10;
+    _newValue = 2;
 }
 
 Freezer::Freezer(int id, int price, string name) :
@@ -24,6 +27,7 @@ Freezer::Freezer(int id, int price, string name) :
 {
     _cameras = 1;
     _weight = 10;
+    _newValue = 2;
 }
 
 Freezer::Freezer(int id, int price, string name, string description) :
@@ -31,6 +35,7 @@ Freezer::Freezer(int id, int price, string name, string description) :
 {
     _cameras = 1;
     _weight = 10;
+    _newValue = 2;
 }
 
 Freezer::Freezer(int id, int price, string name, string description, int cam) :
@@ -38,12 +43,21 @@ Freezer::Freezer(int id, int price, string name, string description, int cam) :
 {
     _cameras = cam;
     _weight = 10;
+    _newValue = 2;
 }
 
 Freezer::Freezer(int id, int price, string name, string description, int cam, int weight) :
     GoodBasic{ id, price, name, description } {
     _cameras = cam;
     _weight = weight;
+    _newValue = 2;
+}
+
+Freezer::Freezer(int id, int price, string name, string description, int cam, int weight, string newValue) :
+    GoodBasic{ id, price, name, description } {
+    _cameras = cam;
+    _weight = weight;
+    _newValue = newValue;
 }
 
 int Freezer::getCameras() {

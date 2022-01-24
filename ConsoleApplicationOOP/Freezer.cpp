@@ -5,6 +5,41 @@ Freezer::Freezer() :
     _weight = 10;
 }
 
+Freezer::Freezer(int id) :
+    GoodBasic{ id, 1, "noname", "nodescription" }
+{
+    _cameras = 1;
+    _weight = 10;
+}
+
+Freezer::Freezer(int id, int price) :
+    GoodBasic{ id, price, "noname", "nodescription" }
+{
+    _cameras = 1;
+    _weight = 10;
+}
+
+Freezer::Freezer(int id, int price, string name) :
+    GoodBasic{ id, price, name, "nodescription" }
+{
+    _cameras = 1;
+    _weight = 10;
+}
+
+Freezer::Freezer(int id, int price, string name, string description) :
+    GoodBasic{ id, price, name, description }
+{
+    _cameras = 1;
+    _weight = 10;
+}
+
+Freezer::Freezer(int id, int price, string name, string description, int cam) :
+    GoodBasic{ id, price, name, description }
+{
+    _cameras = cam;
+    _weight = 10;
+}
+
 Freezer::Freezer(int id, int price, string name, string description, int cam, int weight) :
     GoodBasic{ id, price, name, description } {
     _cameras = cam;

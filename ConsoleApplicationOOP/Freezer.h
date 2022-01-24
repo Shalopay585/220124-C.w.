@@ -8,7 +8,11 @@ private:
     int _weight;
 public:
     Freezer();
-
+    Freezer(int id);
+    Freezer(int id, int price);
+    Freezer(int id, int price, string name);
+    Freezer(int id, int price, string name, string description);
+    Freezer(int id, int price, string name, string description, int cam);
     Freezer(int id, int price, string name, string description, int cam, int weight);
 
     int getCameras();
